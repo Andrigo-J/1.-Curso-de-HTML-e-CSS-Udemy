@@ -40,3 +40,8 @@ span{
 strong{
     color: rgb(43, 43, 43);
 }
+
+ul{
+    padding: 0px;
+    list-style-position: inside;
+}
