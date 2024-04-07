@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.hero{
+    background-image: url(../imagens/bg-4.jpg);
+    height: 450px;
+    background-color: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1px;
+}
+
+.hero-content{
+    width: 80%;
+    margin: 50px auto 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1{
+    font-size: 50px;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.411);
+    text-transform: uppercase;
+}
+
+.hero-content p{
+    display: inline-block;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 16px;
+    margin-top: 20px;
+    border-bottom: 2px solid white;
+}
+
+.hero nav{
+    margin-bottom: 10%;
+}
+
+.hero nav ul{
+    margin: 20px 80px;
+    text-align: right;
+}
+
+.hero nav li{
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid white;
+    margin-left: 16px;
+    transition: 0.6s;
+}
+
+.hero nav a{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight:bolder ;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    transition: 0.6s;
+
+}
+
+.hero nav a:hover, nav li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    
+}
+
+main{
+    width: 90%;
+    /* min-width: 400px; */
+    max-width: 860px;
+    margin: auto;
+}
+
+.container{
+    padding-top: 16px;
+}
+
+section{
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 32px;
+
+}
+
+section h2{
+    border-bottom: 2px solid #CCC;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+section p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: block;
+    background-color: #cdc7c3;
+    padding: 12px;
+    border-radius: 6px;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.rodape{
+    color: white;
+    background-color: #6b6c6b;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 2px 2px 6px black;
+    letter-spacing: 2px;
+}
