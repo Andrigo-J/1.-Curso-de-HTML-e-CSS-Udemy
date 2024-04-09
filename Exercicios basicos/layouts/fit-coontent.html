@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float e Clear</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{
+            width: fit-content;
+        }
+        
+        .min-content .item{
+            width: min-content;
+        }
+
+        .max-content .item{
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, magni?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente eveniet mollitia sunt sequi ipsa enim fugiat laboriosam quae illo, nam recusandae a voluptas iste veritatis.</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto itaque earum expedita eum nihil? Delectus aut eius iste laudantium praesentium aperiam, quaerat assumenda eaque voluptate alias possimus, omnis perferendis voluptas exercitationem nam provident optio deleniti accusamus odio amet ipsam itaque velit ab? Ut facere culpa ducimus! Obcaecati distinctio praesentium deserunt ipsa, quam sint quod neque. Vero impedit, iure ex dolores veritatis numquam placeat ipsa quae omnis tempore nesciunt, iusto enim cupiditate provident!</div>
+    </div>
+
+    <div class="container min-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, magni?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente eveniet mollitia sunt sequi ipsa enim fugiat laboriosam quae illo, nam recusandae a voluptas iste veritatis.</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto itaque earum expedita eum nihil? Delectus aut eius iste laudantium praesentium aperiam, quaerat assumenda eaque voluptate alias possimus, omnis perferendis voluptas exercitationem nam provident optio deleniti accusamus odio amet ipsam itaque velit ab? Ut facere culpa ducimus! Obcaecati distinctio praesentium deserunt ipsa, quam sint quod neque. Vero impedit, iure ex dolores veritatis numquam placeat ipsa quae omnis tempore nesciunt, iusto enim cupiditate provident!</div>
+    </div>
+
+    <div class="container max-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, magni?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente eveniet mollitia sunt sequi ipsa enim fugiat laboriosam quae illo, nam recusandae a voluptas iste veritatis.</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto itaque earum expedita eum nihil? Delectus aut eius iste laudantium praesentium aperiam, quaerat assumenda eaque voluptate alias possimus, omnis perferendis voluptas exercitationem nam provident optio deleniti accusamus odio amet ipsam itaque velit ab? Ut facere culpa ducimus! Obcaecati distinctio praesentium deserunt ipsa, quam sint quod neque. Vero impedit, iure ex dolores veritatis numquam placeat ipsa quae omnis tempore nesciunt, iusto enim cupiditate provident!</div>
+    </div>
+</body>
+</html>
