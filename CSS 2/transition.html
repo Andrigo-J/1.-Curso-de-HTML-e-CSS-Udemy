@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: orange;
+            width: 200px;
+            height: 150px;
+            margin: 100px;
+            transition-property: all;
+            transition-duration: .5s, .2s;
+            transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06), cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            transition-delay: .0s, .32s;
+
+            /*transition: property(all) duration(0s) function(ease) delay(0s) ;*/
+            transition: width 1s;
+        }
+
+        div:hover{
+            width: 400px;
+            height: 300px;
+            background-color: red;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
