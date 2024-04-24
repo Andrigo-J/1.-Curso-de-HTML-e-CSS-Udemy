@@ -32,17 +32,19 @@
             background-color: var(--footer_bg);
 
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
 
         .menu ul{
-            list-style-type: none;
             display: flex;
+            list-style-type: none;
         }
 
         .menu li{
-            margin-right: 30px;
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
         }
 
         .menu a{
@@ -79,7 +81,7 @@
             margin-bottom: 40px;
         }
 
-        .introduction p{
+        .introduction > p{
             font-family: "Belleza", serif;
             font-size: 18px;
             line-height: 2em;
@@ -146,12 +148,13 @@
             margin: auto;
         }
 
-        .complement p, h1{
+        .complement  .p-complement{
             width: 80%;
             color: white;
         }
 
-        .complement h1{
+        .complement .complement-title{
+            color: white;
             width: 100%;
             font-size: 4em;
         }
@@ -223,7 +226,7 @@
         <article class="complement">
             <div class="container-complement">
                 <h1 class="complement-title">Quando os Detalhes Importam Simplesmente Moda</h1>
-                <p>
+                <p class="p-complement">
                     Sabemos que, para muitas pessoas, a moda é mais do que simplesmente vestir roupas. É uma forma de
                     expressão e uma maneira de mostrar ao mundo quem você é. É por isso que nos esforçamos para oferecer
                     peças que atendam aos mais altos padrões de qualidade e estilo. Desde a escolha dos materiais até a
