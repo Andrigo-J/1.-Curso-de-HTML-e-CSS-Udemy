@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,9 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
+        @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+
         :root{
             --bg_head:#162028;
             --menu_text:#425564;
@@ -21,32 +24,175 @@
 
         * {
             font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            background-color: var(--footer_bg);
+
+            padding: 16px;
+
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            display: flex;
+        }
+
+        .menu ul li{
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        .menu ul li a{
+            padding-right: 150px;
+            text-decoration: none;
+            color: var(--menu_text);
+        }
+
+        .header-title{
+            margin-left: 200px;
+            color: white;
+            font-family: "Viaoda Libre", serif;
+        }
+
+        .top-image{
+            width: 100%;
+        }
+
+        main{
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .introduction{
+            width: 70%;
+
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .introduction p{
+            font-family: "Belleza", serif;
+            font-size: 18px;
+            line-height: 2em;
+
+            color: var(--text_color);
+            margin-bottom: 50px;
         }
 
         .introduction-title {
-            font-family: "Belleza", sans-serif;
+            font-family: "Viaoda Libre", serif;
+            font-size: 3em;
+            font-weight: normal;
+            text-align: center;
+
+            color: var(--bg_head);
+
+            margin: 100px auto 70px;
 
         }
 
+        .clothes{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+
+            margin-bottom: 100px;
+        }
+
+        .clothes-img{
+            display: flex;
+            
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .clothes-img span, p{
+            color: var(--text_color);
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        .clothes-img span{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .complement{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-image: url(imagens/bg_detalhe.png);
+            background-size: cover;
+            background-attachment: fixed;
+
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .container-complement{
+            width: 80%;
+            margin: auto;
+        }
+
+        .complement p, h1{
+            width: 80%;
+            color: white;
+        }
+
+        .complement h1{
+            width: 100%;
+            font-size: 4em;
+        }
+
+        .complement p{
+            margin-top: 50px;
+            max-width: 60%;
+        }
+
+
         .complement-title {
             font-family: "Italiana", sans-serif;
+        }
+
+        footer{
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
     <header class="header">
+        <h1 class="header-title">Moda Hora</h1>
         <nav class="menu">
-            <ul class="menu">
+            <ul>
                 <li><a href="#">Portifiolio</a></li>
                 <li><a href="#">Sobre Nós</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-        </nav>
+        </nav>      
     </header>
+
+    <img class="top-image" src="imagens/topo.jpg" alt="imagem topo">
+    
     <main>
         <section class="introduction">
             <h1 class="introduction-title">A escolha certa para momentos especiais</h1>
+            
             <p>
                 Com uma equipe de designers talentosos e experientes, criamos roupas que combinam qualidade, estilo e
                 conforto. Utilizamos materiais de alta qualidade e técnicas de fabricação de ponta para garantir que
@@ -56,24 +202,39 @@
                 processo.
             </p>
 
-            <div class="clothes">
-                <img src="imagens/modelo5.jpg" alt="Modelo 1">
-                <img src="imagens/modelo2.jpg" alt="Modelo 2">
-                <img src="imagens/modelo4.jpg" alt="Modelo 3">
-            </div>
-
         </section>
 
+        <div class="clothes">
+            <div class="clothes-img">
+                <img src="imagens/modelo5.jpg" alt="Modelo 1">
+                <span>Vest Romasa</span>
+                <p>Forte & Caraismático</p>
+            </div>
+            <div class="clothes-img">
+                <img src="imagens/modelo2.jpg" alt="Modelo 2">
+                <span>Jacket Fima</span>
+                <p>Personalidade marcante</p>
+            </div>
+
+            <div class="clothes-img">
+                <img src="imagens/modelo4.jpg" alt="Modelo 3">
+                <span>Jacket Black Kira</span>
+                <p>Empoderamento atraente</p>
+            </div>
+        </div>
+
         <article class="complement">
-            <h1 class="complement-title">Quando os Detalhes Importam Simplesmente Moda</h1>
-            <p>
-                Sabemos que, para muitas pessoas, a moda é mais do que simplesmente vestir roupas. É uma forma de
-                expressão e uma maneira de mostrar ao mundo quem você é. É por isso que nos esforçamos para oferecer
-                peças que atendam aos mais altos padrões de qualidade e estilo. Desde a escolha dos materiais até a
-                criação de cada detalhe, nossa equipe se dedica a produzir roupas que se destacam pela sua elegância e
-                sofisticação. Aqui, você encontrará peças que unem o melhor da moda com a atenção aos detalhes que faz
-                toda a diferença. Descubra uma nova forma de se expressar através da moda conosco.
-            </p>
+            <div class="container-complement">
+                <h1 class="complement-title">Quando os Detalhes Importam Simplesmente Moda</h1>
+                <p>
+                    Sabemos que, para muitas pessoas, a moda é mais do que simplesmente vestir roupas. É uma forma de
+                    expressão e uma maneira de mostrar ao mundo quem você é. É por isso que nos esforçamos para oferecer
+                    peças que atendam aos mais altos padrões de qualidade e estilo. Desde a escolha dos materiais até a
+                    criação de cada detalhe, nossa equipe se dedica a produzir roupas que se destacam pela sua elegância e
+                    sofisticação. Aqui, você encontrará peças que unem o melhor da moda com a atenção aos detalhes que faz
+                    toda a diferença. Descubra uma nova forma de se expressar através da moda conosco.
+                </p>
+            </div>
         </article>
 
     </main>
