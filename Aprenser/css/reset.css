@@ -47,6 +47,7 @@ h3{
     text-decoration: none;
     padding: 1.6rem;
     display: inline-block;
+    color: black;
 }
 
 .upper{
@@ -74,6 +75,11 @@ h3{
 .container{
     max-width: 127.6rem;
     margin: auto;
+}
+
+.section_tittle{
+    padding: 3.7rem 0;
+    text-align: center;
 }
 
 .header{
@@ -172,3 +178,9 @@ h3{
     border-top: transparent;
     padding: 2.5rem 1.5rem;
 }
+
+.btnCard{
+    width: 200px;
+    margin: 4.7rem 0;
+}
+
