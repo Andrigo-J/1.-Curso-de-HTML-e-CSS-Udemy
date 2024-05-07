@@ -82,6 +82,11 @@ h3{
     text-align: center;
 }
 
+.wrapperContainer-fixed{
+    position: sticky;
+    top: 0;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -184,3 +189,58 @@ h3{
     margin: 4.7rem 0;
 }
 
+.hero-we_school{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    padding: 16px;
+    padding-bottom: 0;
+    line-height: 2.5rem;
+}
+
+.hero-we_school > img{
+    width: 500px;
+}
+
+.nossa_escola > h2{
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.nossa_escola > p{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.contatos > iframe{
+    height: 600px;
+}
+
+.contatos > address{
+    margin: 2rem;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+
+    height: 100px;
+    gap: .5rem;
+}
+
+footer > a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+footer > a:hover{
+    text-decoration: underline;
+}
