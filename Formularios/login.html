@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <style>
+        
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #95a5a6;
+
+        }
+
+        body{
+            min-height: 98vh;
+            display: flex;  
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        form {
+            width: 450px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.445);
+        }
+
+        fieldset{
+            border: none;
+            padding: 1em;
+        }
+
+        input,
+        label {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label{
+            margin-bottom: .25em;
+        }
+
+        input{
+            padding: .75em;
+            border-radius: 5px;
+            margin-bottom: 1.5em;
+            border: 1px solid #bbb;
+            font-size: 1em;
+        }
+
+        legend{
+            font-weight: bold;
+            padding: 1em;
+            text-align: center;
+            color: #454e4f;
+            font-size: 1.2em;
+            margin-bottom: .5em;
+        }
+
+        .btn{
+            cursor: pointer;
+            width: fit-content;
+            margin-left: auto;
+            background-color: rgba(0, 153, 255, 0.616); 
+        }
+
+        .actions{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        
+        .btn2{
+            max-width: fit-content;
+            background-color: rgb(43, 43, 128); 
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Entre com seus dados de acesso!</legend>
+            <label for="USER">Usuario</label>
+            <input type="text" name="" id="USER" required autofocus>
+            <!--
+                required torna o campo obrigatorio a ser preenchido
+                autofocus torna ele o primeiro elemento a ganhar fofo quando a pag é aberta
+             -->
+
+            <label for="PASSWORD">Senha</label>
+            <input type="password" name="" id="PASSWORD" required>
+
+            <div class="actions">
+                <input type="reset" value="Apagar" class="btn2">
+                <input type="submit" value="Entrar" class="btn2">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
