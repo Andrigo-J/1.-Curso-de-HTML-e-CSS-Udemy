@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Introdução</legend>
+
+            <label for="">Email</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="filhos">Quantidade de filhos</label><br>
+            <input type="number" id="filhos" min="0" max="10"><br>
+
+            <label for="date">Data</label><br>
+            <input type="date" id="date" min="2023-10-10"><br>
+
+            <br>
+
+            <label>Possui atividade extra?
+                <input type="radio" name="abacate" id="abacate" value="n">Não
+
+            </label>
+
+            <label>
+                <input type="radio" name="abacate" id="abacate" value="s">Sim
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Area de Interesse</legend>
+
+            Qual sua linguagem Preferida? <br>
+            <label>
+                <input type="checkbox" name="interesse" value="Python"> Python<br>
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="JavaScript"> JavaScrpit<br>
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="CSS"> CSS<br>
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="HTML"> HTML<br>
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="Java"> Java (Sus!?)<br>
+            </label>
+
+            <label> Escolha uma opção <br>
+                <select name="linuagem2" required multiple size="7">
+                    
+                    <optgroup label="frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JS</option>
+                    </optgroup>
+
+                    <option value="">Selecione uma opção</option>
+                   
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+
+                <input type="text" list="linguagemList">
+                <datalist id="linguagemList">
+                    <option value="html">
+                    <option value="css">
+                    <option value="js">
+                    <option value="python">
+                    <option value="java">
+                    <option value="php">
+
+                </datalist>
+
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensaegm</legend>
+
+            <textarea name="msg" id="msg"></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
