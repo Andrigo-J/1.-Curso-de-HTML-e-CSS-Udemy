@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Classes Chield </title>
     <style>
-        div :first-child{
+        p:first-child{
             color: red;
         }
 
-        p :first-child{
-            color: blue;
+        p:last-child{
+            color: green;
+        }
+
+        p:nth-child(2){
+            background-color: aqua;
+        }
+
+        p:first-of-type{
+            background-color: green;
+        }
+
+        p:last-of-type{
+            background-color: red;
         }
     </style>
 </head>
@@ -28,9 +40,28 @@
 
     <div>
         <a href="#">Primeiro Link</a>
+        <br>
         <p>Segundo paragrafo</p>
+        <hr>
         <p>Terceiro paragrafo</p>
+        <p>Quarto paragrafo</p>
+        <p>Quinto paragrafo</p>
+        <span>este é um span</span>
     </div>
+
+    <ul>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+    </ul>
 
 </body>
 

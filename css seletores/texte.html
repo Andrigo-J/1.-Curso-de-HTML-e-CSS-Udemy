@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste after e before</title>
+    <style>
+        body{
+            height: 98vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to top, #135bf7, #da2187);
+        }
+
+        div{
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        div p{
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        div::before{
+            content: "";
+            display: block;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            left: -50%;
+            z-index: -1;
+            border-radius: 100px 125px 100px 100px / 207px 53px 43px 0px;
+            background-color: blue;
+            transform: rotate(30deg);
+        }
+        div::after{
+            content: "";
+            display: block;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            z-index: -2;
+            left: 50%;
+            top: 0;
+            border-radius: 100px 125px 100px 100px / 207px 53px 43px 0px;
+            background-color: blue;
+            transform: rotate(204deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <p>SOU FODA FDS</p>
+    </div>
+</body>
+</html>
