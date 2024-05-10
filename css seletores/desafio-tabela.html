@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        body{
+            display: flex;
+            min-height: 98vh;
+            background-color: rgba(255, 127, 80, 0.87);
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            width: 550px;
+        }
+
+        th,
+        td{
+            border: 1px solid black;
+        }
+
+        th{
+            background-color: gray;
+            color: white;
+            text-align: left;
+
+        }
+
+        tr:nth-child(even){
+            background-color: rgb(184, 184, 184);
+
+        }
+
+        tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tr:hover{
+            background-color: #b6dbd8;
+        }
+
+        tr:has(input:checked){
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td> <td>Joaquim</td> <td>joaquim123@gmail.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td> <td>Maria</td> <td>mamamariri  ri@gmail.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td> <td>Cleber</td> <td>clebin321123foda@gmail.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td> <td>Marcio</td> <td>marciaodosus@gmail.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td> <td>Heliel</td> <td>gael.321.123.uiui@gmail.com</td>
+        </tr>
+    </table>
+</body>
+</html>

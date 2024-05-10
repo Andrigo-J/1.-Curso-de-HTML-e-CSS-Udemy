@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transf orm</title>
+    <style>
+        div {
+            outline: 1px solid #888;
+            width: 300px;
+            margin: .5em auto;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        .destaque {
+            background-color: yellow;
+        }
+
+        .div1 .destaque {
+            transform: translate(50%);
+        }
+
+        .div2 .destaque {
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+
+        .div3 .destaque {
+            transform: rotate(89deg);
+        }
+
+        .div4 .destaque{
+            transform: scaleX(1.2);
+            transform: scaleY(.6);
+        }
+
+        .div5 .destaque{
+            transform: skew(15deg, 15deg);
+        }
+
+        .div6 .destaque{
+            transform: translate(50px) rotate(32deg);
+        }
+
+        .div7 .destaque{
+            transform: rotate(32deg) translate(45px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+    </div>
+    
+    <div class="div4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+    </div>
+    
+    <div class="div5">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+    </div>
+
+    <div class="div6">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+    </div>
+
+    <div class="div7">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, voluptas.</p>
+    </div>
+</body>
+
+</html>
