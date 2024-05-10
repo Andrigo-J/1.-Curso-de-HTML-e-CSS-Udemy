@@ -1,11 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>checkbox</title>
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        span {
+            position: relative;
+            margin-right: 10px;
+        }
+
+        .chk1 {
+            display: none;
+        }
+
+        .chk1+label span {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .chk1:checked+label span {
+            background-color: blue;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        .chk1:checked+label span::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 20px;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            box-sizing: border-box;
+            position: absolute;
+            top: 2px;
+            right: 8px;
+            transform: rotate(45deg);
+
+        }
+
+        .lbl2 input[type="checkbox"] {
+            display: none;
+            position: relative;
+        }
+
+        .lbl2 span {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid black;
+            position: relative;
+            transition: all 2s ease;
+        }
+
+        .lbl2 input[type="checkbox"]:checked+span {
+            background-color: blue;
+        }
+
+        .lbl2 input[type="checkbox"]+span::before {
+            content: "";
+            display: block;
+
+            width: 8px;
+            height: 18px;
+            box-sizing: border-box;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            
+            position: absolute;
+            right: 34%;
+            transform: rotate(45deg);
+
+            opacity: 0;
+            transition: 2s ease;
+        }
+
+        .lbl2 input[type="checkbox"]:checked+span::before {
+            opacity: 1;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>CheckBox</h1>
+
+    <input type="checkbox" id="html" class="chk1">
+    <label for="html"><span></span>HTML</label>
+
+    <input type="checkbox" id="js" class="chk1">
+    <label for="js"><span></span>JS</label>
+
+    <input type="checkbox" id="css" class="chk1">
+    <label for="css"><span></span>CSS</label>
+
+    <input type="checkbox" id="java" class="chk1">
+    <label for="java"><span></span>JAVA</label>
+
+    <hr>
+
+    <label for="HTML" class="lbl2">
+        <input type="checkbox" id="HTML">
+        <span></span>
+        html
+    </label>
+
+    <label for="CSS" class="lbl2">
+        <input type="checkbox" id="CSS">
+        <span></span>
+        css
+    </label>
+
+    <label for="JS" class="lbl2">
+        <input type="checkbox" id="JS">
+        <span></span>
+        JS
+    </label>
+
 </body>
+
 </html>
