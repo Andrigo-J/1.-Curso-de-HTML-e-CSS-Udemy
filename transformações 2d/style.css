@@ -1,0 +1,77 @@
+*, *::after,*::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: gray;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.gallery{
+    background-color: white;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    background-color: white;
+    padding: .5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    
+}
+
+.gallery .image{
+    flex-basis: calc(25% - .5em);
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.image a{
+    text-decoration: none;
+}
+
+.gallery p{
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    letter-spacing: 2px;
+    font-size: .75em;
+    position: absolute;
+    bottom: 0;
+    width: 100% ;
+    opacity: .5;
+    transform: translateY(100%);
+    transition: all .3s ease-in-out;
+}
+
+.image:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.image a > img{
+    opacity: .5;
+    transition: all .3s ease-in-out;
+    transform: scale(1.5);
+}
+
+.image a > img:hover{
+    opacity: 1;
+    transform: scale(1);
+}

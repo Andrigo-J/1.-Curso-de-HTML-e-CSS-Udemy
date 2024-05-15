@@ -8,7 +8,7 @@
 
     <style>
         body {
-            background-color: aqua;
+            background-color: #858585;
         }
 
         span {
@@ -51,7 +51,6 @@
         }
 
         .lbl2 input[type="checkbox"] {
-            display: none;
             position: relative;
         }
 
@@ -92,6 +91,118 @@
         .lbl2 input[type="checkbox"]:checked+span::before {
             opacity: 1;
         }
+
+        .lbl2 input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            position: absolute ;
+            outline: none;
+        }
+
+        .lbl2 input[type="checkbox"]:focus+span{
+            outline: 1px solid black;
+        }
+
+        /*.switch span{
+            display: inline-block;
+            position: relative;
+            background-color: blue;
+            width: 50px;
+            height: 25px;
+
+            border: 3px solid black;
+            box-sizing: border-box;
+            border-radius: 25px;
+            transition: all 2s ease;
+        }
+
+        .switch input[type="checkbox"]:not(:checked) + span::before{
+            content: "";
+            display: block;
+            height: 19px;
+            width: 20px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            border-radius: 50%;
+            transition: all 2s ease;
+        }
+
+        .switch input[type="checkbox"]:checked + span::before{
+            content: "";
+            display: block;
+            height: 19px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            transition: all 2s ease;
+        } */
+
+        .switch{
+            --switchColor: #cfd8dc;
+            --time: .2s;
+        }
+
+        .switch span{
+            display: inline-block;
+            width: 2em;
+            height: 1em;
+            border-radius: 1em;
+            outline: 2px solid var(--switchColor);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .switch span::after{
+            content: '';
+            display: block;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: white;
+            transition: all .2s ease-in-out;
+            transform: translateX(0);
+        }
+
+        .switch input:checked + span::after{
+            transform: translateX(100%);
+            background-color: #7a8184;
+        }
+
+        .switch span::before{
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: var(--switchColor);
+            transform: translateX(-100%);
+            transition: transform .2s ease-in-out;
+            position: absolute;
+            z-index: 0;
+
+        }
+
+        .switch input:checked + span::before{
+            transform: translateX(0);
+        }
+
+        .switch input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            position: absolute ;
+            outline: none;
+        }
+
+        .switch input:focus+span{
+            border: 2px solid black;
+            outline-offset: 2px;
+        }
+
     </style>
 </head>
 
@@ -125,6 +236,26 @@
     </label>
 
     <label for="JS" class="lbl2">
+        <input type="checkbox" id="JS">
+        <span></span>
+        JS
+    </label>
+
+    <hr>
+
+    <label  class="switch">
+        <input type="checkbox" id="HTML">
+        <span></span>
+        html
+    </label>
+
+    <label  class="switch">
+        <input type="checkbox" id="CSS">
+        <span></span>
+        css
+    </label>
+
+    <label class="switch">
         <input type="checkbox" id="JS">
         <span></span>
         JS
