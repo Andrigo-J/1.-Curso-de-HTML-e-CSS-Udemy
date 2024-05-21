@@ -12,29 +12,4 @@
     --color-text: #e7e7e7;
 }
 
-html{
-    font-size: 62.5%; /* Torna o tamanho da fonte a 10px*/
-}
 
-body{
-    display: flex;
-    color: var(--color-text);
-    background-color: #ccc;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-}
-
-.main-header{
-    flex-basis: 26rem;
-    background-color: var(--color-secundary);
-}
-
-.main{
-    background-color: var(--color-background);
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-
-a{
-    color: inherit;
-}

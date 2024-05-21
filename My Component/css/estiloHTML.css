@@ -1,0 +1,11 @@
+html{
+    font-size: 62.5%; /* Torna o tamanho da fonte a 10px*/
+}
+
+body{
+    display: flex;
+    color: var(--color-text);
+    background-color: #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
