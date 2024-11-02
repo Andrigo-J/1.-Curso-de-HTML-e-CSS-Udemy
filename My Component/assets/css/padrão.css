@@ -1,0 +1,15 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-secundary:#31333b;
+    --color-background: #444856;
+    --color-secundary-dark: ;
+    --color-primary: #ff7833;
+    --color-text: #e7e7e7;
+}
+
+

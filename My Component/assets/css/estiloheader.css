@@ -1,0 +1,66 @@
+.main-header{
+    flex-basis: 26rem;
+    background-color: var(--color-secundary);
+}
+
+.main{
+    background-color: var(--color-background);
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+a{
+    color: inherit;
+}
+
+.main, 
+.main-header{
+    font-size: 1.6em;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4rem;
+    margin: 5rem 2rem 0 0;
+
+}
+
+.perfil-img{
+    max-width: 10rem;
+}
+
+.navBar-header{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    list-style: none;
+    gap: 2rem;
+    width: 90%;
+    
+}
+
+.navBar-header li{
+    display: block;
+    
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: .4rem;
+
+}
+
+.navBar-header li > a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.navBar-header li > a:hover{
+    background-color: #cccccc7c;
+    padding: 1.8rem;
+}
